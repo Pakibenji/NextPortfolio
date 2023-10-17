@@ -1,0 +1,60 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    border-radius: 20px;
+    align-items: center;
+    margin: 0 auto;
+    background: var(--mainColor);
+    margin-top: 1rem;
+}
+
+.labelDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.2rem;
+    justify-content: center;
+    width: 80%;
+    background: var(--mainColor);
+}
+.formLabel {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    background: var(--mainColor);
+    color: var(--backgroundColor) ;
+}
+
+.labelDiv input {
+    width: 100%;
+    padding: 0.5rem 3rem;
+    margin: 1rem;
+    border-radius: 20px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.formButton {
+    width: 45%;
+    padding: 0.5rem 3rem;
+    margin: 1rem;
+    border-radius: 20px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.formButton:hover {
+    background: var(--backgroundColor);
+    color: var(--mainColor);
+}

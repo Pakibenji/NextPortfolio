@@ -18,8 +18,8 @@
     padding: 0;
     justify-content: center;
     align-items: center;
-    font-size: 6rem;
-    letter-spacing: -0.5rem;
+    font-size: 4rem;
+    letter-spacing: -0.3rem;
     text-decoration: solid underline 0.5rem var(--hoverColor);
     text-underline-offset: 1rem;
   }

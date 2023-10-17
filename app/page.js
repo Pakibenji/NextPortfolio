@@ -6,7 +6,7 @@ import CtaButton from "./components/CtaButton";
 const Home = () => {
   return (
     <>
-      <BigTitle value="BENJAMIN AlCADE" />
+      <BigTitle value="BENJAMIN AlCADE"/>
       <Technos/>
       <CtaButton/>
     </>
