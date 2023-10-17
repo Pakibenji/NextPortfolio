@@ -1,6 +1,6 @@
 import React from "react";
 import { bigTitle } from "@/app/fonts";
-import style from "./BigTitle.module.css";
+import style from "./Title.module.css";
 
 const BigTitle = ({ value }) => {
   return (

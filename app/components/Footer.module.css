@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-weight: 400;
+}
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer ul li {
+  list-style: none;
+  color: var(--mainColor);
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: var(--mainColor);
+}
+
+.link:hover {
+  color: var(--hoverColor);
+}

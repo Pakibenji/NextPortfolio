@@ -1,15 +1,15 @@
 import React from 'react'
 import BigTitle from './components/BigTitle'
-import Button from './components/Button'
 import Technos from './components/Technos'
+import CtaButton from './components/CtaButton'
 
 
 const Home = () => {
   return (
     <>
-    <BigTitle value="BENJAMIN ALCADE"/>
+    <BigTitle value="BENJAMIN AlCADE"/>
     <Technos />
-    <Button label="About me" />
+    <CtaButton />
     </>
   )
 }

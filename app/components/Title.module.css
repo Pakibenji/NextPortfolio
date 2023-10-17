@@ -1,0 +1,25 @@
+.mainTitle {
+    color: var(--mainColor);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 12rem;
+    letter-spacing: -1rem;
+    text-decoration: solid underline 0.5rem var(--hoverColor);
+    text-underline-offset: 1rem;
+  }
+
+  .secondaryTitle {
+    color: var(--mainColor);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    letter-spacing: -0.5rem;
+    text-decoration: solid underline 0.5rem var(--hoverColor);
+    text-underline-offset: 1rem;
+  }

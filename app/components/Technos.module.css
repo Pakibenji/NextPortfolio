@@ -1,4 +1,7 @@
 .technosContainer {
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    width: 100%;
+    justify-content: space-evenly;
+    transform: translateY(-4.3rem);
 }

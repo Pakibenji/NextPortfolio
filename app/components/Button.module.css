@@ -17,6 +17,7 @@
 .button:hover {
   background-color: var(--mainColor);
   color: var(--backgroundColor);
+  transition: 0.5s ease-in-out;
 }
 
 .button:active {

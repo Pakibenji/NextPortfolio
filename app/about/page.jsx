@@ -1,10 +1,10 @@
 import React from "react";
-import BigTitle from "../components/BigTitle";
+import LittleTitle from "../components/LittleTitle";
 
 const About = () => {
   return (
     <>
-      <BigTitle value="ABOUT"/>
+      <LittleTitle label="ABOUT" />
     </>
   );
 };
