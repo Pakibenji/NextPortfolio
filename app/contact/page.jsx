@@ -4,7 +4,7 @@ import LittleTitle from "../components/LittleTitle";
 const Contact = () => {
   return (
     <>
-      <LittleTitle label="ABOUT" />
+      <LittleTitle label="Me contacter" />
     </>
   );
 };

@@ -8,10 +8,10 @@ export const Nav = () => {
     <nav style={body.style} className={style.nav}>
       <ul>
         <li>
-          <Link href="/about">ABOUT</Link>
+          <Link href="/about">À PROPOS</Link>
         </li>
         <li>
-          <Link href="/projects">PROJECTS</Link>
+          <Link href="/projects">PROJETS</Link>
         </li>
         <li>
           <Link href="/contact">CONTACT</Link>

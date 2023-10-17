@@ -11,7 +11,7 @@ const Footer = () => {
           <p className="">© 2023</p>
         </li>
         <li>
-          <p className="">CREATED BY BENJAMIN ALCADE</p>
+          <p className="">CRÉER PAR BENJAMIN ALCADE</p>
         </li>
         <li>
           <Link className={styles.link} href="/">

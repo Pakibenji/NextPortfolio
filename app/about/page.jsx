@@ -4,7 +4,7 @@ import LittleTitle from "../components/LittleTitle";
 const About = () => {
   return (
     <>
-      <LittleTitle label="ABOUT" />
+      <LittleTitle label="À PROPOS" />
     </>
   );
 };

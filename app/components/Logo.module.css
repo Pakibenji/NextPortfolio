@@ -1,0 +1,14 @@
+.logo {
+    color: var(--secondaryColor);
+    background: var(--hoverColor);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-decoration: overline underline;
+    text-underline-offset: 0.5rem ;
+    font-size: 2rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}

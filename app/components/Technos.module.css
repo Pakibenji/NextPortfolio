@@ -1,7 +1,15 @@
 .technosContainer {
-    display:flex;
-    flex-direction:row;
-    width: 100%;
-    justify-content: space-evenly;
-    transform: translateY(-4.3rem);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  transform: translateY(-4.3rem);
+}
+
+.technosContainer h3 {
+  color: var(--mainColor);
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: -0.2rem;
+  text-transform: uppercase;
 }

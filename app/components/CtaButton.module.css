@@ -1,3 +1,5 @@
-.ctaContainer{
-    display:flex;
+.ctaContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }

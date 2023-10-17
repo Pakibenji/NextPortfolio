@@ -5,8 +5,8 @@ import styles from './CtaButton.module.css'
 const CtaButton = () => {
   return (
     <section className={styles.ctaContainer}>
-    <Button label="WORK WITH ME" />
-    <Button label="SEE MY WORK" />
+    <Button label="ME CONTACTER" />
+    <Button label="MES PROJETS" />
     </section>
   )
 }
