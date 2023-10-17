@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import './globals.css'
+import { body } from './fonts'
 
 export const metadata = {
   title: 'Benjamin Alcade, Web Developer',

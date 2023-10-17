@@ -1,0 +1,4 @@
+.technosContainer {
+    display:flex;
+    flex-direction:column;
+}
