@@ -11,9 +11,6 @@ export const Nav = () => {
           <Link href="/about">À PROPOS</Link>
         </li>
         <li>
-          <Link href="/projects">PROJETS</Link>
-        </li>
-        <li>
           <Link href="/contact">CONTACT</Link>
         </li>
       </ul>

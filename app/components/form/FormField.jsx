@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./Form.module.css";
-import { body } from "../fonts";
+import { body } from "../../fonts";
 
 const FormField = ({
   label,

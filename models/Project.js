@@ -12,7 +12,7 @@ const ProjectSchema = new Schema(
     shortDescription: {
       type: String,
     },
-    Company: {
+    company: {
       type: String,
     },
     firstImage: {
@@ -37,5 +37,5 @@ const ProjectSchema = new Schema(
   { timestamps: true }
 );
 
-const Project = models.Post || model("Project", ProjectSchema);
+const Project = models.Project || model("Project", ProjectSchema);
 export default Project;

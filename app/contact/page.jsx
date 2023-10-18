@@ -1,6 +1,6 @@
 import React from "react";
 import LittleTitle from "../components/LittleTitle";
-import ContactForm from "../components/ContactForm";
+import ContactForm from "../components/form/ContactForm";
 
 const Contact = () => {
   return (
