@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 const NewProjectForm = () => {
   const [formData, setFormData] = useState({
     title: "",
+    date: "",
     description: "",
     shortDescription: "",
     company: "",
@@ -45,6 +46,13 @@ const NewProjectForm = () => {
         name="title"
         value={formData.title}
         onChange={(e) => setFormData({ ...formData, title: e.target.value })}
+      />
+      <FormField
+        label="Date"
+        type="text"
+        name="date"
+        value={formData.date}
+        onChange={(e) => setFormData({ ...formData, date: e.target.value })}
       />
       <FormField
         label="Description"

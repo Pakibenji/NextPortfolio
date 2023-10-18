@@ -9,18 +9,9 @@
   background: var(--mainColor);
   transition: all 0.2s ease-in-out;
   border: 6px solid var(--mainColor);
-  transition: all 0.2s ease-in-out;
+  
 }
-.projectContainer:hover .firstImage {
-  opacity: 0.5;
-}
-
-.projectContainer:hover .overlay {
-  opacity: 1;
-}
-
 .overlay {
-  opacity: 0;
   background-color: var(--mainColor);
   transition: opacity 0.2s ease-in-out;
   display: flex;
@@ -28,18 +19,27 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .projectTitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--secondaryColor);
   width: 100%;
   text-align: center;
   background: var(--mainColor);
 }
+.projectDate {
+  font-size: 0.9rem;
+  color: var(--secondaryColor);
+  width: 100%;
+  text-align: center;
+  background: var(--mainColor);
+  margin-bottom: 0.5rem;
+}
 
 .projectShortDescription {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--secondaryColor);
   width: 100%;
   text-align: center;
@@ -54,10 +54,11 @@
 }
 
 .projectLink {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--hoverColor);
   width: 100%;
   text-align: center;
+  align-items: center;
   text-decoration: none;
   border-radius: 5px;
   margin: 0.5rem;
@@ -75,6 +76,7 @@
 }
 
 .iconsContainer svg {
-  scale: 0.6;
+  scale: 0.5;
   border-radius: 5px;
 }
+

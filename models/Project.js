@@ -6,6 +6,9 @@ const ProjectSchema = new Schema(
       type: String,
       required: true,
     },
+    date: {
+      type: String,
+    },
     description: {
       type: String,
     },

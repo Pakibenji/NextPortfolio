@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./DisplayProject.module.css";
-import { bigTitle } from "@/app/fonts";
+import { bigTitle, body } from "@/app/fonts";
 import Icon from "./Icon";
 import Link from "next/link";
 import { Redirect, redirect } from "next/navigation";
@@ -8,6 +8,7 @@ import { Redirect, redirect } from "next/navigation";
 const DisplayAllProjects = ({ project }) => {
   const {
     title,
+    date,
     description,
     shortDescription,
     company,
@@ -32,26 +33,35 @@ const DisplayAllProjects = ({ project }) => {
   const handleMouseLeave = () => {
     setShowOverlay(false);
   };
+
+  const displayFirstImage = () => {
+    return <img src={firstImage} className={styles.firstImage} />;
+  };
+
+  const displayOverlay = () => {
+    return (
+      <div className={styles.overlay}>
+        <h3 className={styles.projectTitle} style={bigTitle.style}>
+          {title}
+        </h3>
+        <p className={styles.projectDate}>{date}</p>
+        <p className={styles.projectShortDescription}>{shortDescription}</p>
+        <Link href={link} className={styles.projectLink}>
+          Visiter le site
+        </Link>
+        <div className={styles.iconsContainer}>{technoIcons}</div>
+      </div>
+    );
+  };
+
   return (
     <div
       className={styles.projectContainer}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      style={body.style}
     >
-      {!showOverlay && <img src={firstImage} className={styles.firstImage} />}
-
-      {showOverlay && (
-        <div className={styles.overlay}>
-          <h3 className={styles.projectTitle} style={bigTitle.style}>
-            {title}
-          </h3>
-          <p className={styles.projectShortDescription}>{shortDescription}</p>
-          <Link href={link} className={styles.projectLink}>
-            Visiter le site
-          </Link>
-          <div className={styles.iconsContainer}>{technoIcons}</div>
-        </div>
-      )}
+      { showOverlay ? displayOverlay() : displayFirstImage()}
     </div>
   );
 };
