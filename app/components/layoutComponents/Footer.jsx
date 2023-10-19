@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import Link from "next/link";
-import { bigTitle } from "../fonts";
+import { bigTitle } from "../../fonts";
 
 const Footer = () => {
   return (

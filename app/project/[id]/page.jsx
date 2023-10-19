@@ -1,9 +1,14 @@
-import React from 'react'
+import DisplayProjectDetail from "@/app/components/DisplayProjectDetail";
+import React from "react";
 
-const ProjectPage = () => {
-  return (
-    <div>ProjectPage</div>
-  )
-}
+const ProjectPage = async ({ params }) => {
+  const { id } = params;
+  const data = await fetch(`${process.env.API_URL}/api/${id}`);
+  const project = await data.json();
 
-export default ProjectPage
+  return <>
+  <DisplayProjectDetail project={project}/>
+  </>;
+};
+
+export default ProjectPage;

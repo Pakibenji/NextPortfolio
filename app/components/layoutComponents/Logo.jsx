@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { logoFont } from "../fonts";
+import { logoFont } from "@/app/fonts";
 import styles from "./Logo.module.css";
 
 const Logo = () => {

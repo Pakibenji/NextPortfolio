@@ -1,46 +1,35 @@
+'use client'
 import React, { useState } from "react";
 import styles from "./DisplayProject.module.css";
 import { bigTitle, body } from "@/app/fonts";
 import Icon from "./Icon";
 import Link from "next/link";
-import { Redirect, redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
+
 
 const DisplayAllProjects = ({ project }) => {
-  const {
-    title,
-    date,
-    description,
-    shortDescription,
-    company,
-    firstImage,
-    secondImage,
-    thirdImage,
-    link,
-    github,
-    technologies,
-  } = project;
+  const { title, date, shortDescription, firstImage, link, technologies } =
+    project;
   const [showOverlay, setShowOverlay] = useState(false);
+  const router = useRouter()
+
   const technoArray = technologies.split(",").map((techno) => techno.trim());
+
+  const handleMouseEnter = () => setShowOverlay(true);
+  const handleMouseLeave = () => setShowOverlay(false);
+
+  const handleRedirect = () => router.push(`/project/${project._id}`)
+  const displayFirstImage = () => {
+    return <img src={firstImage} className={styles.firstImage} />;
+  };
 
   const technoIcons = technoArray.map((techno, index) => {
     return <Icon icon={techno.toLowerCase()} key={index} />;
   });
 
-  const handleMouseEnter = () => {
-    setShowOverlay(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowOverlay(false);
-  };
-
-  const displayFirstImage = () => {
-    return <img src={firstImage} className={styles.firstImage} />;
-  };
-
   const displayOverlay = () => {
     return (
-      <div className={styles.overlay}>
+      <div className={styles.overlay}  onClick={handleRedirect}>
         <h3 className={styles.projectTitle} style={bigTitle.style}>
           {title}
         </h3>
@@ -61,7 +50,7 @@ const DisplayAllProjects = ({ project }) => {
       onMouseLeave={handleMouseLeave}
       style={body.style}
     >
-      { showOverlay ? displayOverlay() : displayFirstImage()}
+      {showOverlay ? displayOverlay() : displayFirstImage()}
     </div>
   );
 };
