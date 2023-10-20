@@ -1,14 +1,16 @@
 .button {
   background-color: var(--backgroundColor);
   border: solid 1px var(--mainColor);
+  transform: translateY(-50px) ;
   color: var(--mainColor);
+  display: flex ;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 1.2rem;
   font-weight: 400;
   padding: 0.5rem 3rem;
-  margin: 1rem;
   border-radius: 20px;
   line-height: 1.5;
   cursor: pointer;

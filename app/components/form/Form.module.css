@@ -7,8 +7,8 @@
     border-radius: 20px;
     align-items: center;
     margin: 0 auto;
-    background: var(--mainColor);
     margin-top: 1rem;
+    border: solid 6px var(--mainColor) ;
 }
 
 .labelDiv {
@@ -18,17 +18,28 @@
     margin: 0.2rem;
     justify-content: center;
     width: 80%;
-    background: var(--mainColor);
 }
 .formLabel {
     font-size: 1.2rem;
     font-weight: 400;
     text-align: center;
-    background: var(--mainColor);
-    color: var(--backgroundColor) ;
+    color: var(--mainColor) ;
 }
 
-.labelDiv input {
+.formInput{
+    width: 100%;
+    padding: 0.5rem 3rem;
+    margin: 1rem;
+    border-radius: 20px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.textarea {
     width: 100%;
     padding: 0.5rem 3rem;
     margin: 1rem;
@@ -42,7 +53,7 @@
 }
 
 .formButton {
-    width: 45%;
+    width: 40%;
     padding: 0.5rem 3rem;
     margin: 1rem;
     border-radius: 20px;

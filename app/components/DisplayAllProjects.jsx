@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import styles from "./DisplayProject.module.css";
 import { bigTitle, body } from "@/app/fonts";
@@ -6,19 +6,19 @@ import Icon from "./Icon";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-
 const DisplayAllProjects = ({ project }) => {
   const { title, date, shortDescription, firstImage, link, technologies } =
     project;
   const [showOverlay, setShowOverlay] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
 
   const technoArray = technologies.split(",").map((techno) => techno.trim());
 
   const handleMouseEnter = () => setShowOverlay(true);
   const handleMouseLeave = () => setShowOverlay(false);
 
-  const handleRedirect = () => router.push(`/project/${project._id}`)
+  const handleRedirect = () => router.push(`/project/${project._id}`);
+
   const displayFirstImage = () => {
     return <img src={firstImage} className={styles.firstImage} />;
   };
@@ -29,8 +29,12 @@ const DisplayAllProjects = ({ project }) => {
 
   const displayOverlay = () => {
     return (
-      <div className={styles.overlay}  onClick={handleRedirect}>
-        <h3 className={styles.projectTitle} style={bigTitle.style}>
+      <div className={styles.overlay}>
+        <h3
+          className={styles.projectTitle}
+          style={bigTitle.style}
+          onClick={handleRedirect}
+        >
           {title}
         </h3>
         <p className={styles.projectDate}>{date}</p>

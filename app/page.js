@@ -8,11 +8,11 @@ import styles from "./page.module.css";
 const Home = () => {
   return (
     <>
-      <BigTitle value="BENJAMIN AlCADE"/>
-      <Technos/>
-      <CtaButton/>
+      <BigTitle value="BENJAMIN AlCADE" />
+      <Technos />
+      <CtaButton />
       <section className={styles.allProjectsContainer}>
-      <AllProject/>
+        <AllProject />
       </section>
     </>
   );
