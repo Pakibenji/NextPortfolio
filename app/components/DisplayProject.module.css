@@ -93,3 +93,25 @@
   scale: 0.5;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .projectContainer {
+    max-width: 200px;
+  }
+  .projectTitle {
+    font-size: 0.8rem;
+  }
+  .projectDate {
+    font-size: 0.6rem;
+  }
+  .projectShortDescription {
+    font-size: 0.6rem;
+  }
+  .projectLink {
+    font-size: 0.6rem;
+  }
+  .iconsContainer svg {
+    scale: 0.3;
+  }
+  
+}

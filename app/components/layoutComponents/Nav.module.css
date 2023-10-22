@@ -47,3 +47,19 @@
 .nav ul li:nth-child(3) {
   animation: fadeIn 3s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+  .nav ul li {
+    margin: 0.5rem;
+  }
+  .nav ul li a {
+    font-size: 1.5rem;
+  }
+  
+}

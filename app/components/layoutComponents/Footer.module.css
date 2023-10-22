@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: fixed;
   bottom: 0;
   width: 100%;
   font-weight: 400;
@@ -26,4 +25,22 @@
 
 .link:hover {
   color: var(--hoverColor);
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .footer ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer ul li {
+    margin: 0.5rem;
+  }
+  
 }

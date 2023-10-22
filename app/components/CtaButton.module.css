@@ -3,3 +3,10 @@
   width: 100%;
   justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+  .ctaContainer {
+    align-items: center;
+    scale: 0.8;
+  }
+}
