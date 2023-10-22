@@ -2,6 +2,7 @@ import React from "react";
 import LittleTitle from "./LittleTitle";
 import Icon from "./Icon";
 import Link from "next/link";
+import styles from "./DisplayProjectDetail.module.css"
 
 const DisplayProjectDetail = ({ project }) => {
   const {
@@ -21,10 +22,10 @@ const DisplayProjectDetail = ({ project }) => {
     return <Icon icon={techno.toLowerCase()} key={index} />;
   });
   return (
-    <>
+    <div className={styles.detailsContainer}>
       <LittleTitle label={title} />
       <p>{date}</p>
-      <p>{description}</p>
+      <p className={styles.description}>{description}</p>
       <img src={firstImage} alt={title} />
       {secondImage && <img src={secondImage} alt={title} />}
       {thirdImage && <img src={thirdImage} alt={title} />}
@@ -33,7 +34,7 @@ const DisplayProjectDetail = ({ project }) => {
       <Link href={github}>
         <Icon icon="github" />
       </Link>
-    </>
+    </div>
   );
 };
 

@@ -6,9 +6,11 @@ const ProjectPage = async ({ params }) => {
   const data = await fetch(`${process.env.API_URL}/api/${id}`);
   const project = await data.json();
 
-  return <>
-  <DisplayProjectDetail project={project}/>
-  </>;
+  return (
+    <>
+      <DisplayProjectDetail project={project} />
+    </>
+  );
 };
 
 export default ProjectPage;

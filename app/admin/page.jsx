@@ -1,16 +1,14 @@
-import React from "react";
-import LittleTitle from "../components/LittleTitle";
-import AllProject from "../components/AllProject";
-import Link from "next/link";
+import React from 'react'
+import AdminLogin from '@/app/components/form/AdminLogin'
+import LittleTitle from '../components/LittleTitle'
 
-const Admin = () => {
+const page = () => {
   return (
     <>
-      <LittleTitle label="ADMIN DASHBOARD" />
-      <AllProject />
-      <Link href="/admin/newproject">Ajouter un projet</Link>
+    <LittleTitle label="ADMIN LOGIN" />
+    <AdminLogin />
     </>
-  );
-};
+  )
+}
 
-export default Admin;
+export default page

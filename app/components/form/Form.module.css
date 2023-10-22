@@ -50,6 +50,7 @@
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    resize: none;
 }
 
 .formButton {
