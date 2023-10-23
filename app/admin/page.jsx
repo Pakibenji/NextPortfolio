@@ -1,14 +1,14 @@
-import React from 'react'
-import AdminLogin from '@/app/components/form/AdminLogin'
-import LittleTitle from '../components/LittleTitle'
+import React from "react";
+import AdminLogin from "@/app/components/form/AdminLogin";
+import LittleTitle from "../components/LittleTitle";
 
-const page = () => {
+const AdminLoginPage = () => {
   return (
     <>
-    <LittleTitle label="ADMIN LOGIN" />
-    <AdminLogin />
+      <LittleTitle label="ADMIN LOGIN" />
+      <AdminLogin />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default AdminLoginPage;

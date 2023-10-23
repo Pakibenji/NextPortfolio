@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import FormField from "./FormField";
 import FormButton from "./FormButton";
 import { useRouter } from "next/navigation";
+import styles from "./Form.module.css";
 
 const NewProjectForm = () => {
   const [formData, setFormData] = useState({
@@ -39,7 +40,7 @@ const NewProjectForm = () => {
   };
 
   return (
-    <form action="" onSubmit={handleSubmit}>
+    <form action="" onSubmit={handleSubmit} className={styles.formContainer}>
       <FormField
         label="Title"
         type="text"

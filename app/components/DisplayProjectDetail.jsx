@@ -29,7 +29,7 @@ const DisplayProjectDetail = ({ project }) => {
       <img src={firstImage} alt={title} />
       {secondImage && <img src={secondImage} alt={title} />}
       {thirdImage && <img src={thirdImage} alt={title} />}
-      <div>{technoIcons}</div>
+      <div className={styles.technos}>{technoIcons}</div>
       <Link href={link}>Visiter le site</Link>
       <Link href={github}>
         <Icon icon="github" />

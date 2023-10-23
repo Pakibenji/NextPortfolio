@@ -6,6 +6,7 @@
   bottom: 0;
   width: 100%;
   font-weight: 400;
+  position : fixed;
 }
 .footer ul {
   display: flex;

@@ -7,14 +7,12 @@ import { AdminContext } from "@/app/context/AdminContext";
 
 const NewProject = () => {
   const router = useRouter();
-  const { isAdmin } = useContext(AdminContext);
+  const { isAdmin, checkIsAdmin } = useContext(AdminContext);
 
   useEffect(() => {
-    if (!isAdmin) {
-      alert("Vous n'êtes pas connecté");
-      router.push("/admin");
-    }
+    checkIsAdmin();
   }, [isAdmin]);
+
   return (
     <>
       {isAdmin && (

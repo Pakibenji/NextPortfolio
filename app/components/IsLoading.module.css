@@ -1,0 +1,17 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading svg {
+  animation: rotate 2s linear infinite;
+  scale: 1.5;
+  color: var(--mainColor);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

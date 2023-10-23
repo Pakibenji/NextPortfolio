@@ -10,6 +10,7 @@
 
 .description {
     color: var(--hoverColor);
+    text-align: center;
 }
 
 .detailsContainer img {
@@ -17,4 +18,17 @@
     object-fit: cover;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
+}
+
+.technos { 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detailsContainer a {
+    color: var(--hoverColor);
+    text-decoration: none;
 }
