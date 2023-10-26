@@ -9,52 +9,37 @@ import { useRouter } from "next/navigation";
 const DisplayAllProjects = ({ project }) => {
   const { title, date, shortDescription, firstImage, link, technologies } =
     project;
-  const [showOverlay, setShowOverlay] = useState(false);
   const router = useRouter();
 
   const technoArray = technologies.split(",").map((techno) => techno.trim());
-
-  const handleMouseEnter = () => setShowOverlay(true);
-  const handleMouseLeave = () => setShowOverlay(false);
-
   const handleRedirect = () => router.push(`/project/${project._id}`);
-
-  const displayFirstImage = () => {
-    return <img src={firstImage} className={styles.firstImage} />;
-  };
 
   const technoIcons = technoArray.map((techno, index) => {
     return <Icon icon={techno.toLowerCase()} key={index} />;
   });
 
-  const displayOverlay = () => {
-    return (
-      <div className={styles.overlay}>
-        <h3
-          className={styles.projectTitle}
-          style={bigTitle.style}
-          onClick={handleRedirect}
-        >
-          {title}
-        </h3>
-        <p className={styles.projectDate}>{date}</p>
-        <p className={styles.projectShortDescription}>{shortDescription}</p>
-        <Link href={link} className={styles.projectLink}>
-          Visiter le site
-        </Link>
-        <div className={styles.iconsContainer}>{technoIcons}</div>
-      </div>
-    );
-  };
-
   return (
-    <div
-      className={styles.projectContainer}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      style={body.style}
-    >
-      {showOverlay ? displayOverlay() : displayFirstImage()}
+    <div className={styles.projectContainer} style={body.style}>
+      <div className={styles.cardEffect}>
+        <div className={styles.flipCardFront}>
+          <img src={firstImage} className={styles.firstImage} width="300px" />
+        </div>
+        <div className={styles.overlay}>
+          <h3
+            className={styles.projectTitle}
+            style={bigTitle.style}
+            onClick={handleRedirect}
+          >
+            {title}
+          </h3>
+          <p className={styles.projectDate}>{date}</p>
+          <p className={styles.projectShortDescription}>{shortDescription}</p>
+          <Link href={link} className={styles.projectLink}>
+            Visiter le site
+          </Link>
+          <div className={styles.iconsContainer}>{technoIcons}</div>
+        </div>
+      </div>
     </div>
   );
 };
