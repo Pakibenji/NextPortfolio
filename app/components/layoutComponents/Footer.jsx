@@ -14,22 +14,17 @@ const Footer = () => {
           <p className="">CRÉER PAR BENJAMIN ALCADE</p>
         </li>
         <li>
-          <Link className={styles.link} href="/">
+          <Link className={styles.link} href="https://www.linkedin.com/in/alcadebenjamin/">
             LINKEDIN
           </Link>
         </li>
         <li className={styles.link}>
-          <Link className={styles.link} href="/">
+          <Link className={styles.link} href="https://github.com/Pakibenji">
             GITHUB
           </Link>
         </li>
-        <li className={styles.link}>
-          <Link className={styles.link} href="/">
-            TWITTER
-          </Link>
-        </li>
         <li>
-          <Link className={styles.link} href="/">
+          <Link className={styles.link} href="mailto:alcade.benjamin@gmail.com">
             ALCADE.BENJAMIN@GMAIL.COM
           </Link>
         </li>
